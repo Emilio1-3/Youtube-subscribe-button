@@ -50,9 +50,11 @@
      if(buttonElement.innerHTML === 'Subscribe') {
           buttonElement.innerHTML = 'Subscribed';
           buttonElement.classList.add
-          ('is-subscribed')
+          ('is-subscribed');
      } else{
        buttonElement.innerHTML = 'Subscribe';
+       buttonElement.classList.remove
+       ('is-subscribed');
      }
     }
   </script>
